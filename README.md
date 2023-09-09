@@ -48,14 +48,12 @@ Se realizan las siguientes validaciones:
 - Verificación de que todos los datos requeridos estén ingresados.
 - Deshabilitación del ingreso de la nota de examen cuando el estudiante está eximido o no tiene derecho al examen.
 
-## Resultados y Visualización
+## Resultados
 
 Se muestran los siguientes resultados y visualizaciones:
 - Mensajes de APROBACIÓN, EXIMICIÓN y REPROBACIÓN DEL RAMO, según corresponda.
 - Imágenes de estado, por ejemplo, un semáforo en verde para APROBADO o uno en rojo para REPROBADO.
 - Botón de reinicio que permite borrar todos los valores ingresados para volver a calcular la nota de presentación.
 
-Personalización de Colores:
-- Puedes personalizar los colores de los objetos según tu elección para mejorar la apariencia del sistema.
-
-Este sistema de gestión de notas de curso proporciona una manera efectiva de calcular y visualizar las notas de los estudiantes de acuerdo con las reglas establecidas.
+## Vista
+![Vista](https://github.com/ClaudioVergara2/CalculadorNota/blob/main/Prototipo.jpg)
