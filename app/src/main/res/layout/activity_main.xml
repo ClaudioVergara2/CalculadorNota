@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Calculador de Nota"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Evaluacion 1 (25%)"
+        android:textColor="#9859FD" />
+
+    <EditText
+        android:id="@+id/et_nota1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese nota 1"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Evaluacion 2 (35%)"
+        android:textColor="#9859FD" />
+
+    <EditText
+        android:id="@+id/et_nota2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese nota 2"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evaluacion 3 (40%)"
+        android:textColor="#9859FD" />
+
+    <EditText
+        android:id="@+id/et_nota3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese nota 3"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btn_notapre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calcularNotaPresentacion"
+        android:text="Calcular nota presentacion" />
+
+    <TextView
+        android:id="@+id/tx_notapre"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Tu nota de presentacion es:"
+        android:textColor="#9859FD" />
+
+    <EditText
+        android:id="@+id/et_asistencia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese asistencia"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nota examen"
+        android:textColor="#9859FD" />
+
+    <EditText
+        android:id="@+id/et_examen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese examen"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_notafinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calcularNotaFinal"
+        android:text="Calcular nota final" />
+
+    <TextView
+        android:id="@+id/tx_notafinal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="TU NOTA FINAL ES:"
+        android:textColor="#9859FD" />
+
+    <TextView
+        android:id="@+id/tx_situFinal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="SITUACION FINAL:"
+        android:textColor="#9859FD" />
+
+    <ImageView
+        android:id="@+id/iv_tick"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/tick"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_x"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:visibility="invisible"
+        app:srcCompat="@mipmap/x"
+        tools:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btn_limpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Limpiar"
+        android:text="LIMPIAR" />
+
+
+</LinearLayout>
